@@ -5,6 +5,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+  mode: process.env.NODE_ENV || "development",
   // Entry point(s) of the application
   entry: {
     bundle: "./src/index.js", // main React app entry point
