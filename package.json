@@ -4,7 +4,9 @@
   "scripts": {
     "clean": "rimraf dist",
     "start": "webpack serve --mode development --open",
-    "build": "npm run clean && webpack --mode production"
+    "build": "npm run clean && webpack --mode production",
+    "surge": "npm run build && surge -p dist",
+    "aws": "npm run build && s3-website deploy dist"
   },
   "dependencies": {
     "@faker-js/faker": "^9.9.0",
