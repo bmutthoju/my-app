@@ -11,7 +11,6 @@ const About = lazy(() =>
 const Contact = lazy(() =>
   import(/* webpackChunkName: "Contact" */ "./components/Contact")
 );
-page;
 
 // Create route configuration
 const router = createBrowserRouter([
